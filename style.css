@@ -1,0 +1,182 @@
+/* @import url("https://taniarascia.github.io/primitive/css/main.css"); */
+@import url("./normalize.css");
+@font-face {
+    font-family: voxabular-font;
+    /* src: url("./assets/GN-KMBFont-UB-NewstyleKanaA/GN-KillGothic-U-KanaNA.ttf"); */
+    /* src: url("./assets/TitanOne-Regular.ttf"); */
+    src: url("./assets/ShareTechMono-Regular.ttf");
+    src: url("./assets/Bangers-Regular.ttf");
+}
+/* Variables */
+:root {
+    --first-color: #cbf078;
+    --second-color: #f8f398;
+    --third-color: #f1b963;
+    --fourth-color: #db4343;
+    /* --fourth-color: #e46161; */
+}
+/** Fonts **/
+body {
+    font-family: voxabular-font;
+    background: url("./assets/bg-04.png");
+    background-color: var(--third-color);
+}
+
+/** Color palets : */
+.first-color {
+    background: var(--first-color);
+}
+.second-color {
+    background: var(--second-color);
+}
+.third-color {
+    background: var(--third-color);
+}
+.fourth-color {
+    background: var(--fourth-color);
+}
+/* container*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 0.7rem;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 100px;
+}
+.navbar__title {
+    /* border: 1px solid green; */
+    font-size: 1.4rem;
+    width: 300px;
+    color: var(--second-color);
+    text-shadow: 1px 1px 2px black;
+    padding-left: 1rem;
+}
+.navbar__description {
+    width: 200px;
+    color: var(--second-color);
+    text-shadow: 1px 1px 2px black;
+}
+/* img */
+.play {
+}
+.play__img {
+    /* border: 1px solid black; */
+    height: 70vh;
+    width: 90vw;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 4px #69450f;
+}
+.play__btn {
+    /* height: 0; */
+    font-family: voxabular-font;
+    /* font-weight: 600; */
+    letter-spacing: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    /* left: 44%; */
+    margin: 0 40%;
+    border-radius: 50px;
+    background-size: 300% 100%;
+    padding: 1.4rem;
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    max-width: 100px;
+    /* box-shadow: 2px 2px 3px var(--second-color); */
+    cursor: pointer;
+    box-shadow: 1px 3px 7px 3px var(--third-color);
+    border: none;
+    animation-name: heyplay;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.play__btn:hover {
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    border: none;
+    transform: scale(1.2);
+    animation-name: heyplay;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes heyplay {
+    5%,
+    50% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1) rotate(-5deg);
+    }
+
+    25% {
+        transform: scale(1) rotate(5deg);
+    }
+
+    30% {
+        transform: scale(1) rotate(-3deg);
+    }
+
+    35% {
+        transform: scale(1) rotate(2deg);
+    }
+
+    40% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}
+.play__btn:active,
+.play__btn:focus {
+    background-color: var(--first-color);
+    color: var(--fourth-color);
+    border: none;
+}
+.section {
+    /* border: 1px solid brown; */
+    background-color: var(--second-color);
+    color: rgb(39, 37, 37);
+    width: 90vw;
+    padding: 0.5rem;
+    border-radius: 3px;
+    /* padding: 0 50px; */
+    text-align: center;
+    /* margin: auto 4rem; */
+    /* margin-top: -30px; */
+}
+.brief-description {
+    background-color: var(--fourth-color);
+    color: var(--second-color);
+    text-shadow: 1px 1px 2px black;
+    /* padding: 1rem ; */
+    width: 100%;
+}
+footer {
+    font-size: 0.8rem;
+    width: 100vw;
+    background-color: var(--second-color);
+    text-align: center;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}

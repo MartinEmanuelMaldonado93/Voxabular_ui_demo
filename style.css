@@ -6,11 +6,13 @@
     font-family: voxabular-font;
     /* src: url("./assets/GN-KMBFont-UB-NewstyleKanaA/GN-KillGothic-U-KanaNA.ttf"); */
     /* src: url("./assets/TitanOne-Regular.ttf"); */
-    src: url("./assets/ShareTechMono-Regular.ttf");
+    /* src: url("./assets/ShareTechMono-Regular.ttf"); */
     src: url("./assets/Bangers-Regular.ttf");
+    /* #004a2f  #002f35 #ff6337  #ffa323
+    */
 }
 /* Variables */
-:root {
+:root { 
     --first-color: #cbf078;
     --second-color: #f8f398;
     --third-color: #f1b963;
@@ -31,6 +33,7 @@ body {
     place-items: center;
     gap: 0.7rem;
     width: 100%;
+    /* text-decoration: ; */
 }
 
 /* navbar */

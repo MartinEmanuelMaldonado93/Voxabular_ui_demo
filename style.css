@@ -12,7 +12,7 @@
     */
 }
 /* Variables */
-:root { 
+:root {
     --first-color: #cbf078;
     --second-color: #f8f398;
     --third-color: #f1b963;
@@ -60,7 +60,7 @@ body {
     width: 20%;
     margin: 2px 2rem;
     /* todo: transition... */
-    /* transition: 0.5s; */
+    transition: 0.5s;
 }
 .navbar__social img {
     /* border:1px solid green; */
@@ -95,10 +95,14 @@ body {
     }
     .navbar__social {
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
+        transition: 0.4s;
     }
     .navbar__followus {
-        margin-left: -90px;
+        /* margin-left: -90px; */
+        /* border: 1px solid gray; */
+        width: 100%;
     }
 }
 
